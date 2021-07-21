@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "4",
+      "name": "Toby Curtis",
+      "iq": 160
+    },
+    {
+      "name": "Sylvester Dodd",
+      "iq": 125,
+      "id": "dJcKiRn"
+    },
+    {
+      "name": "Mark Collins",
+      "iq": 125,
+      "id": "yLXm4VQ"
+    },
+    {
+      "name": "Paige Dineen",
+      "iq": 125,
+      "id": "LbgoeyV"
+    },
+    {
+      "name": "walt",
+      "iq": 125,
+      "id": "LbgoeyV"
+    }
+  ]
+}

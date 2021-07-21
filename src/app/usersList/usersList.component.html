@@ -1,0 +1,34 @@
+<!--<input type="text" #usr (keyup.enter) = "addUser(usr.value)" (blur) = "addUser(usr.value); usr.value=''" /> -->
+
+<label> Name </label>
+<input type=" text" (change)="setNewUserName($event)" [value]='newUserName' />
+<label> IQ Level </label>
+<input type = " text" (change)="setNewIq($event)" [value]='newUserIq'/>
+<button (click)="addUser()">Add User</button>
+
+<!--() is an event binding and [] is an property binding basically modifies the property of the string-->
+
+   <!--<div *ngFor="let userName of testUser">
+      <h3> {{userName}} </h3> -->
+
+
+
+<div *ngFor="let foo of users" class="user-container">
+
+   <span>{{foo.id}}<br>Name : {{foo.name}} <br> IQ :{{foo.iq}} </span>
+   <span (click)="removeUser.emit(foo.id)">Remove</span>
+</div>
+
+  <!--<h2> Fetch Records </h2>
+
+ 
+      
+      <label> Enter the ID</label>
+      <input type = "text" (change) ="fetchRecord($event)"/>
+      <button (click)="displayRecord()"> Fetch User</button> 
+      <div *ngFor="let foo of  inter_record" class="user-container">
+
+         <span>{{foo.id}}<br>Name : {{foo.name}} <br> IQ :{{foo.iq}} </span>
+        
+      </div> -->
+      <input type=" text" (change)="fetchData($event)" />
